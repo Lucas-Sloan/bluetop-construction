@@ -1,0 +1,93 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+    background-image: url('../assets/Background.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60% 100%;
+    padding: 0 10%;
+}
+
+.full-logo {
+    width: 650px;
+    max-width: 50%;
+    margin-left: 0;
+}
+
+.text-container {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-left: 200px;
+    max-width: 40%;
+    max-height: fit-content;
+    flex-grow: 1;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 30px 0;
+    margin-left: 20px;
+}
+
+.mission-container, .about-container {
+    color: white;
+    text-align: center;
+}
+
+.mission-section, .about-section {
+    margin-top: 30px;
+    background-color: #1C73BC;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.mission-container h3, .about-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-right: 20%;
+}
+
+.mission-section p, .about-section p {
+    font-size: 1.2em;
+}
+
+.text-container h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.text-container h3 {
+    font-size: 2.5em;
+}
+
+.text-container p, .text-container ul {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-container button {
+    background-color: #1C2B4B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.text-container button:hover {
+    background-color: #1A2A3A;
+}
