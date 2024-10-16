@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #0E164A;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footer .logo {
+    height: 80px;
+    padding: 0;
+}
+
+.footer .contact-info {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 50px;
+}
+
+.footer .icon {
+    height: 50px;
+}
+
+.footer .rights {
+    font-size: 0.7em;
+}
