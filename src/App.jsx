@@ -1,18 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import Footer from './components/Footer';
-import './App.css';  // Assuming you're using a global CSS file
 
 const App = () => {
   return (
-    <div className="app-container">
+    <Router>
       <Navbar />
-      <div className="main-content">
-        <Landing />
-      </div>
+      <Routes>
+        <Route path="/" element={<Landing />} /> {/* Landing page */}
+        {/* Add other routes here */}
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 };
 

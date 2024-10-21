@@ -13,7 +13,7 @@ const Footer = () => {
         <p>Phone: (817) 366-8739</p>
         <p>Email: Arrmerchen@thebluetop.com</p>
         <div className="rights">
-            <p>© 2023 Bluetop Construction. All Rights Reserved.</p>
+            <p>© 2024 Bluetop Construction. All Rights Reserved.</p>
         </div>
       </div>
       <img src={logo} alt="Logo" className="logo" />

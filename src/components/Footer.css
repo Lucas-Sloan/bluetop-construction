@@ -7,6 +7,10 @@
     color: #fff;
     flex-wrap: wrap;
     max-height: 20%;
+    width: 100%; /* Ensure the footer spans the full width */
+    position: relative; /* Ensure it stays within the flow */
+    margin-top: 30px; /* Push the footer to the bottom when there's little content */
+    margin-bottom: 0;
 }
 
 .footer .logo {
@@ -32,4 +36,35 @@
 
 .footer .rights {
     font-size: 0.7em;
+}
+
+@media (max-width: 768px) {
+    /* Apply the mobile-specific footer styles here */
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer .logo {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .footer .contact-info {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .footer .social-icons {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer .icon {
+        height: 40px;
+    }
+
+    .footer .rights {
+        font-size: 0.7em;
+    }
 }

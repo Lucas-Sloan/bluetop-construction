@@ -12,20 +12,17 @@
 }
 
 .video-container {
-    width: 50%;
+    width: 50%;  /* For desktop, 50% width */
     height: 100%;
     position: relative;
     margin: 0;
 }
 
 .text-container {
-    width: 50%;
+    width: 50%;  /* For desktop, 50% width */
     text-align: center;
     color: #fff;
     padding: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     margin-right: 180px;
 }
 
@@ -37,7 +34,6 @@
     text-align: center;
     gap: 30px;
     width: 80%;
-    height: auto;
     margin: auto;
     background-color: whitesmoke;
     padding: 30px 0;
@@ -100,46 +96,6 @@
     background-color: #1A2A3A;
 }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    /* Stack elements vertically on smaller screens */
-    .main-container {
-        flex-direction: column; /* Switch from row to column */
-        height: auto; /* Let it grow based on content */
-        width: 100%;
-    }
-
-    .video-container, .text-container {
-        width: 100%; /* Make video and text take full width */
-        margin: 0; /* Remove margins */
-    }
-
-    /* Adjust content container */
-    .content-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    /* Adjust section padding and font size for mobile */
-    .mission-section, .about-section {
-        width: 100%; /* Full width for mobile */
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    .text-container h2, .text-container h3 {
-        font-size: 2em; /* Smaller font size on mobile */
-    }
-
-    .text-container button {
-        font-size: 1.5em; /* Smaller button text for mobile */
-    }
-
-    .mission-section p, .about-section p {
-        font-size: 1.2em; /* Smaller font size for mission and about sections */
-    }
-}
-
 @media (max-width: 1150px) {
     .text-container h2, .text-container h3 {
         font-size: 2em; /* Smaller font size on mobile */
@@ -176,5 +132,87 @@
 
     .text-container button {
         font-size: 1em; /* Smaller button text for mobile */
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 80px); /* Full viewport height minus navbar */
+        width: 100vw;  /* Full viewport width */
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .video-container {
+        width: 100vw;  /* Full width on mobile */
+        height: 50vh; /* 50% of the viewport height */
+        position: sticky;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100px;
+        z-index: 10;
+    }
+
+    .video-container iframe {
+        width: 100vw;  /* Make sure the video takes full width */
+        height: 50vh;  /* Full height of the video container */
+        position: relative;
+        border: none;
+    }
+
+    .text-container {
+        width: 100vw;  /* Full width for text container */
+        height: 50vh; /* 50% of the viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .text-container h2, .text-container h3 {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    .text-container ul {
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .text-container button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .mission-section, .about-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .text-container h2, .text-container h3 {
+        font-size: 2em; /* Smaller font size on mobile */
+    }
+
+    .text-container button {
+        font-size: 1.5em; /* Smaller button text for mobile */
+        margin-bottom: 100px;
+    }
+
+    .mission-section p, .about-section p {
+        font-size: 1.2em; /* Smaller font size for mission and about sections */
     }
 }
