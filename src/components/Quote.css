@@ -1,0 +1,80 @@
+/* Wrapper that holds the quote section */
+.quote-section {
+    background-image: url('../assets/Background2.svg'); /* Replace with correct path */
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensure the background covers the whole section */
+    background-position: center center; /* Center the background */
+    padding: 0; /* Remove extra padding */
+    height: 80vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Actual quote container styling */
+  .quote-container {
+    background-color: #0E164A;
+    color: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 0 auto; /* No need for margin, it's centered via Flexbox */
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Optional: Ensure the text is centered */
+  }
+  
+  /* Header Section */
+  .quote-header {
+    margin-bottom: 30px;
+  }
+  
+  .quote-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .quote-header h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Body Section */
+  .quote-body {
+    font-size: 1.2em;
+  }
+  
+  .quote-body h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+  }
+  
+  .quote-body p {
+    margin: 10px 0;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .quote-section {
+        height: calc(100vh - 80px); 
+        background-color: #1C73BC;
+    }
+    
+    .quote-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .quote-header h1 {
+      font-size: 2em;
+    }
+  
+    .quote-header h3 {
+      font-size: 1.2em;
+    }
+  
+    .quote-body p, .quote-body h3 {
+      font-size: 1em;
+    }
+  }
+  

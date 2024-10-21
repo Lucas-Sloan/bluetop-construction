@@ -9,7 +9,7 @@
     max-height: 20%;
     width: 100%; /* Ensure the footer spans the full width */
     position: relative; /* Ensure it stays within the flow */
-    margin-top: 40px; /* Push the footer to the bottom when there's little content */
+    margin-top: auto; /* Push the footer to the bottom when there's little content */
     margin-bottom: 0;
 }
 
