@@ -13,7 +13,7 @@
 
 .video-container {
     width: 50%;  /* For desktop, 50% width */
-    height: 100%;
+    height: 98%;
     position: relative;
     margin: 0;
 }
@@ -96,47 +96,23 @@
     background-color: #1A2A3A;
 }
 
-@media (max-width: 1150px) {
-    .text-container h2, .text-container h3 {
-        font-size: 2em; /* Smaller font size on mobile */
-    }
-
-    .text-container button {
-        font-size: 1em; /* Smaller button text for mobile */
-    }
-
-    .mission-section p, .about-section p {
-        font-size: 1.2em; /* Smaller font size for mission and about sections */
-    }
-}
-
-/* Media query for half-sized browser (approx 1024px) */
 @media (max-width: 1024px) {
-    /* Stack elements vertically on half-sized browser */
-    .main-container {
-        flex-direction: column; /* Switch from row to column */
-        height: auto; /* Allow it to grow with content */
+    .text-container {
+        padding-left: 100px;
     }
 
-    .video-container, .text-container {
-        width: 100%; /* Full width for video and text */
-        height: 100%;
-        margin: 0;
-    }
-
-    /* Adjust content container for half-sized screen */
-    .content-container {
-        flex-direction: column;
-        height: auto;
+    .text-container h2, .text-container h3 {
+        font-size: 2em; 
     }
 
     .text-container button {
-        font-size: 1em; /* Smaller button text for mobile */
+        font-size: 1.5em; 
+
     }
 }
 
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 932px) {
     .main-container {
         display: flex;
         flex-direction: column;
@@ -155,7 +131,6 @@
         margin: 0;
         padding: 0;
         padding-bottom: 100px;
-        z-index: 10;
     }
 
     .video-container iframe {
