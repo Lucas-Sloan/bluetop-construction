@@ -6,11 +6,13 @@
     background-color: #0E164A;
     color: #fff;
     flex-wrap: wrap;
+    max-height: 20%;
 }
 
 .footer .logo {
-    height: 80px;
+    height: 100px;
     padding: 0;
+    gap: 20px;
 }
 
 .footer .contact-info {

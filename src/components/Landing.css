@@ -1,63 +1,69 @@
+/* Main container with video and text */
 .main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50vh;
-    background-color: black;
-    background-image: url('../assets/Background.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 60% 100%;
-    padding: 0 10%;
+    background-color: #f5f5f5;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-.full-logo {
-    width: 650px;
-    max-width: 50%;
-    margin-left: 0;
+.video-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin: 0;
 }
 
 .text-container {
+    width: 50%;
     text-align: center;
     color: #fff;
     padding: 20px;
-    margin-left: 200px;
-    max-width: 40%;
-    max-height: fit-content;
-    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 180px;
 }
 
+/* Content container for Mission and About Us */
 .content-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    background-color: black;
+    text-align: center;
+    gap: 30px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: whitesmoke;
     padding: 30px 0;
-    margin-left: 20px;
 }
 
+/* Mission and About Us sections */
 .mission-container, .about-container {
-    color: white;
-    text-align: center;
+    color: black;
 }
 
 .mission-section, .about-section {
     margin-top: 30px;
     background-color: #1C73BC;
+    color: white;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
 }
 
 .mission-container h3, .about-container h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    margin-right: 20%;
 }
 
 .mission-section p, .about-section p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .text-container h2 {
@@ -67,11 +73,6 @@
 
 .text-container h3 {
     font-size: 2.5em;
-}
-
-.text-container p, .text-container ul {
-    font-size: 1.2em;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -80,14 +81,100 @@
     padding: 0;
 }
 
+.text-container li {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .text-container button {
     background-color: #1C2B4B;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
+    font-size: 2em;
 }
 
 .text-container button:hover {
     background-color: #1A2A3A;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    /* Stack elements vertically on smaller screens */
+    .main-container {
+        flex-direction: column; /* Switch from row to column */
+        height: auto; /* Let it grow based on content */
+        width: 100%;
+    }
+
+    .video-container, .text-container {
+        width: 100%; /* Make video and text take full width */
+        margin: 0; /* Remove margins */
+    }
+
+    /* Adjust content container */
+    .content-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Adjust section padding and font size for mobile */
+    .mission-section, .about-section {
+        width: 100%; /* Full width for mobile */
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .text-container h2, .text-container h3 {
+        font-size: 2em; /* Smaller font size on mobile */
+    }
+
+    .text-container button {
+        font-size: 1.5em; /* Smaller button text for mobile */
+    }
+
+    .mission-section p, .about-section p {
+        font-size: 1.2em; /* Smaller font size for mission and about sections */
+    }
+}
+
+@media (max-width: 1150px) {
+    .text-container h2, .text-container h3 {
+        font-size: 2em; /* Smaller font size on mobile */
+    }
+
+    .text-container button {
+        font-size: 1em; /* Smaller button text for mobile */
+    }
+
+    .mission-section p, .about-section p {
+        font-size: 1.2em; /* Smaller font size for mission and about sections */
+    }
+}
+
+/* Media query for half-sized browser (approx 1024px) */
+@media (max-width: 1024px) {
+    /* Stack elements vertically on half-sized browser */
+    .main-container {
+        flex-direction: column; /* Switch from row to column */
+        height: auto; /* Allow it to grow with content */
+    }
+
+    .video-container, .text-container {
+        width: 100%; /* Full width for video and text */
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Adjust content container for half-sized screen */
+    .content-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-container button {
+        font-size: 1em; /* Smaller button text for mobile */
+    }
 }
