@@ -128,7 +128,7 @@
     .video-container {
         width: 100vw;
         height: 50vh;
-        position: sticky;
+        position: relative;
         top: 0;
         margin: 0;
         padding: 0;
