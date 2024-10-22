@@ -122,7 +122,7 @@
         width: 100vw;
         padding: 0;
         margin: 0;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .video-container {
@@ -167,6 +167,7 @@
     .text-container button {
         font-size: 1.2em;
         padding: 10px 20px;
+        z-index: 10;
     }
 
     .content-container {
