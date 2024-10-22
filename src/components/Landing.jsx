@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import background from '../assets/Background.svg';
 import './Landing.css';
 
@@ -26,7 +27,9 @@ const Landing = () => {
               <li>Soil Stabilization, Land Clearing, Erosion Control</li>
               <li>Ponds, Road Construction and more</li>
             </ul>
-            <button>GET A QUOTE</button>
+            <Link to="/quote">
+              <button>Get a Quote</button>
+            </Link>
           </div>
         </div>
 
