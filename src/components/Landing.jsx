@@ -36,9 +36,9 @@ const Landing = () => {
             <h3>Our Mission</h3>
             <div className='mission-section'>
               <p>
-                At Blue Top Construction, we’re passionate about mastering the art of dirt. 
-                Since day one, our mission has been to deliver exceptional excavation and grading services throughout the DFW area. 
-                With a deep commitment to integrity, ingenuity, and sustainability, our team is prepared to handle projects of any size and complexity. 
+              From inception, our mission has been to deliver unparalleled quality in every project, ensuring profitability for our clients through competitive pricing. 
+              Our passion for shaping the earth drives us to employ the latest technologies and construction methods, guaranteeing that every job is executed with precision, on schedule, and to the highest standards of excellence. 
+              We are committed to doing it right the first time, every time. 
               </p>
             </div>
           </div>
