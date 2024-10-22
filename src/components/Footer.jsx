@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="contact-info">
         <p>Contact us:</p>
         <p>Phone: (817) 366-8739</p>
-        <p>Email: Arrmerchen@thebluetop.com</p>
+        <p>Email: Armerchen@thebluetop.com</p>
         <div className="rights">
             <p>© 2024 Bluetop Construction. All Rights Reserved.</p>
         </div>
