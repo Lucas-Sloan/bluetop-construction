@@ -1,0 +1,93 @@
+/* Wrapper that holds the careers section */
+.careers-section {
+    background-image: 
+      url('../assets/Background2.svg'), /* Replace with correct path */
+      url('../assets/Machine3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the whole section */
+    background-position: center center; /* Center the background */
+    padding: 0; /* Remove extra padding */
+    height: 80vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Actual careers container styling */
+  .careers-container {
+    background-color: #0E164A;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto; /* No need for margin, it's centered via Flexbox */
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.4);
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .careers-header {
+    margin-bottom: 30px;
+  }
+  
+  .careers-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .careers-header h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Body Section */
+  .careers-body {
+    font-size: 1.2em;
+  }
+  
+  .careers-body h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+  }
+  
+  .careers-body p {
+    margin: 10px 0;
+  }
+  
+  /* Styling for the LinkedIn link */
+  .careers-link {
+    color: #1C73BC;
+    font-size: 1.2em;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .careers-section {
+      height: calc(100vh - 80px); 
+    }
+  
+    .careers-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .careers-header h1 {
+      font-size: 2em;
+    }
+  
+    .careers-header h3 {
+      font-size: 1.2em;
+    }
+  
+    .careers-body p, .careers-body h3 {
+      font-size: 1em;
+    }
+  
+    .careers-link {
+      font-size: 1em;
+    }
+  }  

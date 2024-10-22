@@ -4,15 +4,16 @@ import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import Quote from './components/Quote';
 import Footer from './components/Footer';
+import Careers from './components/Careers';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Landing />} /> {/* Landing page */}
-        <Route path="/quote" element={<Quote />} /> {/* Get a Quote page */}
-        {/* Add other routes here */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer />
     </Router>
