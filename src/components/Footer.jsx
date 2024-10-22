@@ -18,9 +18,15 @@ const Footer = () => {
       </div>
       <img src={logo} alt="Logo" className="logo" />
       <div className="social-icons">
-        <img src={facebookIcon} alt="Facebook" className="icon" />
-        <img src={instagramIcon} alt="Instagram" className="icon" />
-        <img src={linkedinIcon} alt="LinkedIn" className="icon" />
+        <a href="https://www.facebook.com/profile.php?id=61558560070096" target="_blank" rel="noopener noreferrer">
+          <img src={facebookIcon} alt="Facebook" className="icon" />
+        </a>
+        <a href="https://www.instagram.com/BluetopConstruction" target="_blank" rel="noopener noreferrer">
+          <img src={instagramIcon} alt="Instagram" className="icon" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinIcon} alt="LinkedIn" className="icon" />
+        </a>
       </div>
     </footer>
   );

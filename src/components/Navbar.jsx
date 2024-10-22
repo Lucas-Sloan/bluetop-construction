@@ -10,9 +10,14 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Function to close the menu when a link is clicked
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <Link to="/">
+      <Link to="/" onClick={closeMenu}>
         <img src={halfLogo} alt="Half Logo" />
       </Link>
 
@@ -23,10 +28,9 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><Link to="/quote">Get a Quote</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><Link to="/careers">Careers</Link></li>
+        <li><Link to="/quote" onClick={closeMenu}>Get a Quote</Link></li>
+        <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+        <li><Link to="/careers" onClick={closeMenu}>Careers</Link></li>
       </ul>
     </nav>
   );
