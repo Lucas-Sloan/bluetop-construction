@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import background from '../assets/Background.svg';
 import './Landing.css';
 
 const Landing = () => {
   return (
     <>
       <div className='Landing'>
-        <div className="main-container" style={{ backgroundImage: `url(${background})` }}>
+        <div className="main-container">
           <div className="video-container">
-            {/* Embed the Vimeo video with autoplay, loop, and no controls */}
             <iframe
               src="https://player.vimeo.com/video/1021797732?title=0&byline=0&portrait=0&badge=0&autopause=0&autoplay=1&loop=1&controls=0"
               frameBorder="0"

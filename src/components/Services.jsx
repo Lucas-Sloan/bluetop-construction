@@ -20,7 +20,6 @@ const Services = () => {
                 </ul>
             </div>
             <div className="video-content">
-                {/* Embed Vimeo video */}
                 <iframe 
                 src="https://player.vimeo.com/video/1021797857?title=0&byline=0&portrait=0&badge=0&autopause=0&autoplay=1&loop=1&controls=0"
                 frameBorder="0"

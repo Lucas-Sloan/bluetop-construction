@@ -69,13 +69,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateX(200%);  /* Hidden off-screen */
+        transform: translateX(200%);
         transition: transform 0.5s ease-in-out;
-        z-index: 10; /* Ensure it appears above content */
+        z-index: 10;
     }
 
     .nav-links.open {
-        transform: translateX(0);  /* Slides in when hamburger is clicked */
+        transform: translateX(0);
     }
 
     .nav-links li {

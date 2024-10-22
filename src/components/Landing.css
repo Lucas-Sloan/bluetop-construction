@@ -9,17 +9,18 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background-image: url('../assets/Background.svg');
 }
 
 .video-container {
-    width: 50%;  /* For desktop, 50% width */
+    width: 50%;
     height: 98%;
     position: relative;
     margin: 0;
 }
 
 .text-container {
-    width: 50%;  /* For desktop, 50% width */
+    width: 50%;
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -117,16 +118,16 @@
     .main-container {
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 80px); /* Full viewport height minus navbar */
-        width: 100vw;  /* Full viewport width */
+        height: calc(100vh - 80px);
+        width: 100vw;
         padding: 0;
         margin: 0;
         overflow: hidden;
     }
 
     .video-container {
-        width: 100vw;  /* Full width on mobile */
-        height: 50vh; /* 50% of the viewport height */
+        width: 100vw;
+        height: 50vh;
         position: sticky;
         top: 0;
         margin: 0;
@@ -135,15 +136,15 @@
     }
 
     .video-container iframe {
-        width: 100vw;  /* Make sure the video takes full width */
-        height: 50vh;  /* Full height of the video container */
+        width: 100vw;
+        height: 50vh;
         position: relative;
         border: none;
     }
 
     .text-container {
-        width: 100vw;  /* Full width for text container */
-        height: 50vh; /* 50% of the viewport height */
+        width: 100vw;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,15 +181,15 @@
     }
 
     .text-container h2, .text-container h3 {
-        font-size: 2em; /* Smaller font size on mobile */
+        font-size: 2em;
     }
 
     .text-container button {
-        font-size: 1.5em; /* Smaller button text for mobile */
+        font-size: 1.5em;
         margin-bottom: 100px;
     }
 
     .mission-section p, .about-section p {
-        font-size: 1.2em; /* Smaller font size for mission and about sections */
+        font-size: 1.2em;
     }
 }
