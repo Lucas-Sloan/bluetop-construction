@@ -75,6 +75,30 @@
     padding-left: 30px;
 }
 
+@media (max-width: 1280px) {
+    .services-container h1 {
+        font-size: 1.6em;
+    }
+    .services-container li {
+        font-size: 1.2em;
+    }
+    .video-content {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .services-container h1 {
+        font-size: 1.4em;
+    }
+    .services-container li {
+        font-size: 1.1em;
+    }
+    .video-content {
+        width: 50%;
+    }
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .services-section {
