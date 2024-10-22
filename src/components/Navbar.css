@@ -81,6 +81,7 @@
     .nav-links li {
         margin: 40px;
         font-size: 2em;
+        padding-left: 75px;
     }
 
     .hamburger {

@@ -7,7 +7,7 @@
     background-size: cover; 
     background-position: center center; 
     padding: 0;
-    height: 80vh;
+    height: calc(100vh - 200px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
   
   /* Body Section */
   .careers-body {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   
   .careers-body h3 {
