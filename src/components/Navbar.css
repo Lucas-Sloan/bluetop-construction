@@ -6,6 +6,7 @@
     align-items: center;
     padding: 10px;
     background-color: #0E164A;
+    z-index: 2;
 }
 
 .navbar img {
@@ -58,7 +59,7 @@
 }
 
 /* Mobile menu styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-links {
         position: absolute;
         top: 80px;

@@ -47,9 +47,12 @@ const Landing = () => {
             <h3>About Us</h3>
             <div className="about-section">
               <p>
-                We bring together over 20 years of combined expertise, professionalism, and a passion for excellence.
-                Our experienced team understands the nuances of excavation and grading, ensuring every project is
-                completed with precision, on time, and within budget.
+                At Bluetop Construction, we are dedicated to delivering excellence through innovation and integrity. 
+                Together, our team brings over 20 years of experience in the construction industry, managing a diverse portfolio that spans from single-family homes to expansive interstate highways. 
+                This experience has taught us that there's a spectrum of solutions to meet the unique demands of each project. 
+                We prioritize cost-effectiveness without compromising on quality, tailoring our approach to align with any budget. 
+                Our commitment extends beyond building; it's about crafting sustainable futures, nurturing our trade's legacy, and forging lasting client relationships. 
+                Whether it's a residential, commercial, or civil earth moving project, we are your partners in construction, committed to your vision and the integrity of every project.
               </p>
             </div>
           </div>

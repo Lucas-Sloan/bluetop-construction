@@ -14,7 +14,7 @@
 
 .video-container {
     width: 50%;
-    height: 98%;
+    height: 100%;
     position: relative;
     margin: 0;
 }
@@ -24,46 +24,54 @@
     text-align: center;
     color: #fff;
     padding: 20px;
-    margin-right: 180px;
+    padding-right: 200px;
 }
 
 /* Content container for Mission and About Us */
 .content-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     text-align: center;
     gap: 30px;
     width: 80%;
     margin: auto;
     background-color: whitesmoke;
     padding: 30px 0;
+    min-height: 400px;
 }
 
-/* Mission and About Us sections */
+/* Mission and About Us sections with equal flex */
 .mission-container, .about-container {
     color: black;
+    flex: 1;
+    margin-bottom: 20px;
 }
 
 .mission-section, .about-section {
     margin-top: 30px;
     background-color: #1C73BC;
     color: white;
+    text-align: left;
     padding: 20px;
-    width: 100%;
     border-radius: 8px;
-    margin-bottom: 40px;
+    min-height: 300px;
 }
 
 .mission-container h3, .about-container h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 15px;
 }
 
-.mission-section p, .about-section p {
-    font-size: 1.5em;
+.mission-section p {
+    font-size: 1.75em;
 }
 
+.about-section p {
+    font-size: 1.3em;
+}
+
+/* Text container styling */
 .text-container h2 {
     font-size: 3.5em;
     margin-bottom: 10px;
@@ -80,7 +88,7 @@
 }
 
 .text-container li {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
@@ -98,7 +106,7 @@
     background-color: #1A2A3A;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1368px) {
     .main-container {
         height: calc(100vh - 200px);
     }
@@ -112,51 +120,104 @@
     }
 
     .text-container ul li {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        padding: 10px
     }
 
     .text-container button {
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: 1024px) {
     .main-container {
-        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 200px);
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+    }
+
+    .video-container {
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+        top: 0;
+        z-index: 0;
+    }
+
+    .video-container iframe {
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+        border: none;
+    }
+
+    .text-container {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
     }
 
     .text-container h2 {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
     .text-container h3 {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 
-    .text-container ul li {
-        font-size: 1.1em;
+    .text-container ul {
+        padding: 0;
+        font-size: 1.5em;
     }
 
     .text-container button {
         font-size: 1.4em;
+        padding: 10px 20px;
+        z-index: 10;
+        margin-top: 0px;
     }
 
     .content-container {
-        padding: 20px 0;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
     }
 
     .mission-section, .about-section {
+        width: 100%;
         padding: 20px;
-        font-size: 1em;
+    }
+
+    .text-container button {
+        font-size: 1.6em;
+        margin-bottom: 100px;
+    }
+
+    .mission-section p, .about-section p {
+        font-size: 1.4em;
     }
 }
+
 
 /* Mobile-specific styles */
 @media (max-width: 932px) {
     .main-container {
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 40px);
         width: 100vw;
         padding: 0;
         margin: 0;
@@ -171,7 +232,6 @@
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
-        margin-top: -40px;
     }
 
     .video-container iframe {
@@ -208,6 +268,11 @@
     .text-container ul {
         padding: 0;
         font-size: 0.8em;
+    }
+
+    .text-container ul li {
+        font-size: 1.2em;
+        padding: 0px
     }
 
     .text-container button {

@@ -1,18 +1,23 @@
-/* Ensure the body and the root container take up the full height */
+/* Ensure body and root container take full height */
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Iceland', sans-serif;
 }
 
-/* App container to fill the full height */
+/* App container to fill full height */
 .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the container takes up the full viewport height */
+    min-height: 100vh;
 }
 
-/* Make the main content grow to take up any remaining space */
+/* Main content to grow for layout */
 .main-content {
-    flex-grow: 1; /* Ensures the content takes the remaining space */
+    flex-grow: 1;
+}
+
+/* Header and important text in DM Serif Display */
+h1, h2, h3, .header-text {
+    font-family: 'DM Serif Display', serif;
 }
